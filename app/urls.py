@@ -16,6 +16,8 @@ Including another URLconf
 from django.urls import path
 from .views import ItemFilterView, ItemDetailView, ItemCreateView, ItemUpdateView, ItemDeleteView
 
+app_name = 'app'
+
 urlpatterns = [
     # 一覧画面
     path('', ItemFilterView.as_view(), name='index'),
